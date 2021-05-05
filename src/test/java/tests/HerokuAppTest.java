@@ -16,7 +16,6 @@ public class HerokuAppTest {
     public void herokuAppTest() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("http://the-internet.herokuapp.com/inputs");
@@ -30,4 +29,6 @@ public class HerokuAppTest {
 
         driver.quit();
     }
+
+
 }
